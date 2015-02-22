@@ -3,7 +3,12 @@
  * http://jquery.com/
  *
  * Dependency System
- * https://mixpanel.com/
+ * - mixpanel( https://mixpanel.com/ )
+ *
+ * Dependency library
+ * - jquery ( http://jquery.com/ )
+ * - underscore ( http://underscorejs.org/ )
+ *
  *
  * Copyright 2015,
  *
@@ -15,8 +20,8 @@
  */
 jQuery(document).ready(function(){
 
-    // variable se
-    var url = "/insurance/aff-data.json";
+    // variable setting
+    var url = "./data.json";
     var objData = {};
     var intLength = 0;
     var runTrack;
