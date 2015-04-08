@@ -56,11 +56,10 @@ jQuery(document).ready(function(){
         _.filter( objData , fltrPickupByKey );
 
         // Tracking
-        mixpanel.track(
-            "Click Banner",
-            { "Aff ID"      : trackItem[0].key },
-            { "Aff Company" : trackItem[0].company}
-        );
+        mixpanel.track( "Click Banner" ,{
+            "Aff ID"      : trackItem[0].key ,
+            "Aff Company" : trackItem[0].company
+        });
     }
 
     for( i = 0; i < intLength; i++){
